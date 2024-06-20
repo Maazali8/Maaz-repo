@@ -5,7 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS</title>
-    <link rel="stylesheet" href="css2.css" />
+    <style>
+*{
+    background:#b3b4bd;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Adjust gap as needed for margin between divs */
+    margin: 20px;
+}
+
+.ab, .bc, .ca, .da {
+    height: 27px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 3.5px;
+    border-color: rgb(212, 0, 255) transparent rgb(1, 33, 33) transparent;
+    border-style: solid;
+    transition: border-color 0.1s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-size: small;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+h1::selection {
+    color: rgb(215, 7, 223);
+}
+
+.ab:hover, .bc:hover, .ca:hover, .da:hover {
+    border-color: rgb(212, 0, 255);
+    border-radius: 20%;
+    box-shadow: 0 0 5px rgb(212, 0, 255), 0 0 10px rgb(212, 0, 255), 0 0 10px rgb(212, 0, 255);
+    
+}
+
+
+
+    </style>
   </head>
   <body>
   </div>
