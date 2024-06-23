@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <div class="menu-toggle">☰</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p style="color: black;">I'm a professional web developer.</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Maaz Ali, a front-end developer and student at NFC University. I'm passionate about creating visually appealing and user-friendly web interfaces, and I'm skilled in HTML, CSS, and JavaScript. At NFC University, I've become known for my innovative projects and keen eye for design, always striving to push the boundaries of what's possible in web development. I balance my academic studies with hands-on experience through internships and personal projects. My commitment to learning and growing in this ever-evolving field drives me to continually hone my skills and stay ahead of the curve</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <a href="#about">
+                <div class="project-item">
+                <h3>Calculator by Java</h3>
+                <p>A Calculator that Perform basic Arthmatic operation</p>
+            </div>
+            </a>
+            <div class="project-item">
+                <h3>A glass effect Header by HTML,CSS</h3>
+                <p>A light transparent Header with black blur</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>java</li>
+            
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
